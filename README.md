@@ -13,7 +13,7 @@ I have created some simple examples that demonstrate the the usage of the tool. 
 By Building from the `dockerfile` or pulling from this github. Running the command
 
 ```
-docker run -p 8501:8501 -d imagestorage
+docker run -p -d 8501:8501 ghcr.io/lovingtech/image-datastorage
 ```
 
 You'll be able to acess the gui for the script. Allowing for easier use.
