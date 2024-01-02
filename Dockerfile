@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
 ADD app.py /app/
 ADD transcoder.py /app/
 
-RUN pip install --upgrade pip
-RUN pip install numpy opencv-python-headless streamlit
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install  Pillow numpy opencv-python-headless streamlit
 
 EXPOSE 8501
 
