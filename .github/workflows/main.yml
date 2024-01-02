@@ -34,4 +34,4 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: lovingtech/imagedata_storage:latest
+          tags: ghcr.io/lovingtech/imagedata_storage:latest
