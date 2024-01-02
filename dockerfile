@@ -13,6 +13,7 @@ ADD app.py /app/
 ADD transcoder.py /app/
 ADD requirements.txt /app/
 
+RUN pip3 install --upgrade pip3
 RUN pip3 install -r /app/requirements.txt
 
 EXPOSE 8501
