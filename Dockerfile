@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.9-alpine
 
 WORKDIR /app
 
@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y \
 ADD app.py /app/
 ADD transcoder.py /app/
 
-RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install  Pillow numpy opencv-python-headless streamlit
 
 EXPOSE 8501
