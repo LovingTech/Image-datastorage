@@ -35,3 +35,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/lovingtech/imagedata_storage:latest
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm
